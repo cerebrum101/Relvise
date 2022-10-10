@@ -819,17 +819,20 @@ body {
 
 	&__container {
 
+	&__cards {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 
 		justify-content: space-between;
 	}
+
 }
 
 .footer-column {
 	display: flex;
 	flex-direction: column;
+		align-items: center;
 
 	align-items: flex-start;
 
@@ -897,6 +900,17 @@ body {
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 24px;
+		/* identical to box height, or 171% */
+
+		text-align: center;
+		letter-spacing: 0.2px;
+
+		&--dark {
+			color: #FFFFFF;
+			border: 1px solid #ffffff;
+
+		}
+	}
 
 	color: #737373;
 	&__link{
