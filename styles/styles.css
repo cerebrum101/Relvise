@@ -713,6 +713,81 @@ body {
     width: 100%;
   }
 }
+.contact {
+  background-color: #fafafa;
+  padding: 0 0 150px;
+}
+.contact__container {
+  margin: 0 auto;
+}
+.contact__header {
+  padding: 80px 0;
+}
+.contact__cards {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 984px;
+}
+
+.contact-card {
+  background-color: #fff;
+  flex: 0 1 33.333%;
+}
+.contact-card__inner {
+  margin: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+.contact-card__inner--dark {
+  margin: 80px 40px;
+}
+.contact-card__icon {
+  font-size: 72px;
+  color: #0D5C63;
+}
+.contact-card__icon--dark {
+  color: #fff;
+}
+.contact-card__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-card__item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+.contact-card__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.contact-card__button {
+  padding: 10px 20px;
+  color: #FF7B47;
+  border: 1px solid #FF7B47;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+.contact-card__button--dark {
+  color: #FFFFFF;
+  border: 1px solid #ffffff;
+}
+.contact-card--dark {
+  background-color: #252B42;
+  color: #fff;
+}
+
 .footer-main {
   background-color: #17213C;
   color: #FFFFFF;
@@ -728,6 +803,7 @@ body {
 .footer-column {
   display: flex;
   flex-direction: column;
+  align-items: center;
   align-items: flex-start;
 }
 .footer-column__header {
@@ -735,6 +811,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   margin: 0 0 20px 0;
+  color: #FFFFFF;
 }
 .footer-column__list {
   display: flex;
@@ -747,6 +824,9 @@ body {
   font-size: 24px;
   color: #8EC2F2;
   margin: 0 10px 0 0;
+}
+.footer-column__item {
+  color: #FFFFFF;
 }
 
 @media (max-width: 1080px) {
@@ -768,26 +848,29 @@ body {
   padding: 25px 0;
 }
 .footer-social__container {
-  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  height: 100%;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
-
-.signature {
+.footer-social .signature {
+  max-width: 322px;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-  color: #737373;
+  /* identical to box height, or 171% */
+  text-align: center;
+  letter-spacing: 0.2px;
 }
-.signature__link {
+.footer-social .signature__link {
   text-decoration: none;
   color: #0D5C63;
 }
-
-.socials__list {
+.footer-social .socials {
+  max-width: 160px;
+}
+.footer-social .socials__list {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 20px;
