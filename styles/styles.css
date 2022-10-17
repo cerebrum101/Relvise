@@ -195,6 +195,7 @@ a {
 body {
   font-family: "Montserrat";
   font-style: normal;
+  background-color: #FAFAFA;
   color: #252B42;
   height: 100%;
 }
@@ -724,7 +725,7 @@ body {
   padding: 80px 0;
 }
 .contact__cards {
-  margin: 0;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
