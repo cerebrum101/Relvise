@@ -732,6 +732,19 @@ body {
   max-width: 984px;
 }
 
+@media (max-width: 946px) {
+  .contact__cards {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    max-width: 984px;
+  }
+  .contact__card {
+    width: 80%;
+  }
+}
 .contact-card {
   background-color: #fff;
   flex: 0 1 33.333%;

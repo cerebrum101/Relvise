@@ -834,6 +834,27 @@ body {
 	}
 
 }
+@media (max-width: 946px) {
+	.contact {
+			
+	
+			&__cards {
+				margin: auto;
+	
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				
+				row-gap: 30px;
+
+				max-width: 984px;
+			}
+			&__card{
+				width: 80%;
+			}
+	
+		}
+}
 
 .contact-card {
 	background-color: #fff;
